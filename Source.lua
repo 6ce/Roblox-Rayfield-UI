@@ -120,7 +120,7 @@ local Rayfield = game:GetObjects("rbxassetid://10804731440")[1]
 
 if gethui then
 	Rayfield.Parent = gethui()
-elseif syn.protect_gui then 
+elseif syn and syn.protect_gui then 
 	syn.protect_gui(Rayfield)
 	Rayfield.Parent = CoreGui
 elseif CoreGui:FindFirstChild("RobloxGui") then
